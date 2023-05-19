@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Century Gym - Creative</title>
+    <link rel="stylesheet" href="calculator.css" />
+    <script src="calculator.js" defer></script>
+  </head>
+  <body>
+    <container
+      ><header>
+        <h1>Century Gym</h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="reservation.html">Reservation</a></li>
+            <li><a href="calculator.html">Calculator</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section class="calorie">
+          <h2>Calorie Calculator</h2>
+          <form onsubmit="calculateCalories(event)">
+            <label for="activity">Select an activity:</label>
+            <select id="activity" name="activity">
+              <option value="running">Running</option>
+              <option value="cycling">Cycling</option>
+              <option value="swimming">Swimming</option>
+              <option value="weightlifting">Weightlifting</option>
+            </select>
+
+            <label for="duration">Duration (in minutes):</label>
+            <input type="number" id="duration" name="duration" required />
+
+            <input type="submit" value="Calculate" />
+          </form>
+          <p id="result"></p>
+        </section>
+      </main>
+      <footer>
+        <ul>
+          <li>Email: info@centurygym.com</li>
+          <li>Phone: 123-456-7890</li>
+          <li>Address: 123 Main Street, City, Country</li>
+        </ul>
+        <p>&copy; 2023 Century Gym. All rights reserved.</p>
+        <author>
+          <h5>jeury pina</h5>
+        </author>
+      </footer>
+    </container>
+  </body>
+</html>
